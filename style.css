@@ -8,29 +8,79 @@ body{
     position: relative;
     top: 0px;
     height: 100px;
+    outline: 10px solid #412318;
+    outline-offset: -5px;
     background: #405b2d;
 }
 #upper-div h1{
     position: relative;
     width: max-content;
     top: 50%;
-    transform: scaleY(1.5);
+    transform: scaleY(2);
+    user-select: none;
     translate: 0 -50%;
     left: 20px;
+    color: #412318;
+    font-weight: 900;
+    background: radial-gradient(closest-side at center, #41741cce ,#405b2d00);
     letter-spacing: 3px;
     font-family: "pixl";
+    z-index: 1;
     margin: 0;
 }
-#upper-div hi::after{
+#upper-div img{
+    image-rendering: pixelated;
     position: relative;
-    display: inline;
+    transform: skew( -30deg)
+    scaleY(1.5);
+    user-select: none;
+    left: 160px;
+    z-index: 0;
+    bottom: 20px;
+}
+#upper-div::after{
+    position: relative;
     content: "cafe";
-    height: 30px;
-    width: 20px;
-
+    left: 40px;
+    font-family: "pixl";
+    color:#c49876;
+    user-select: none;
+    bottom: 50px;
+    -webkit-text-stroke: 1px rgba(249, 212, 168, 0.536);
+    font-size: 50px;
+}
+.fa-cart-shopping{
+    scale: 2.5;
+    color: #324714;
+}
+#upper-div button{
+    position: absolute;
+    right: 30px;
+    background: transparent;
+    width: 70px;
+    bottom: 15px;
+    height: 70px;
+    border: none;
+    border-radius: 50%;
+}
+#upper-div button:hover .fa-cart-shopping{
+    color: #c49876;
+}
+#upper-div button:hover{
+    background:#3c501f ;
+}
+#upper-div button.active .fa-cart-shopping{
+    color: #324714;
+}
+#upper-div button.active{
+    background-color: #c49876;
 }
 @font-face {
     font-family: "pixl";
+    src: url(fonts/Nautilus.otf);
+}
+@font-face {
+    font-family: "bold";
     src: url(fonts/Bold.woff2);
 }
 @font-face {
