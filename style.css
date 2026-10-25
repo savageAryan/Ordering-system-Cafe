@@ -76,24 +76,47 @@ body{
     border: 2px rgb(113, 80, 27) solid;
     background-color: #c49876;
 }
+#control{
+    border: 1px red solid;
+    position: relative;
+    min-width: 100%;
+}
+#control button{
+    display: block;
+    position: relative;
+    right: 0px;
+}
+#control h2{
+    margin: 0px;
+    font-family: "cursive";
+    font-size: 50px;
+    width: max-content;
+    color: #9F432B;
+    
+}
+#items{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    flex-shrink: 1;
+    justify-content: space-evenly;
+    border: 1px yellow solid;
+}
 #cart{
     
     display: none;
-    margin: 20px;
-    position: absolute;
+    position: sticky;
     width: 400px;
     border-radius: 30px;
     background: #b14f37ad;
     height: 600px;
-    right: 0px;
+    left: 100%;
     border: 1px red solid;
     animation: cartpop 0.1s ease-in -0.3s reverse ;
     
 }
 #cart.active{
-    animation: cartpop 0.2s ease-in;
-    display: block;
-
+    display: inline-block;
 }
 @keyframes cartpop {
     from{
@@ -113,10 +136,21 @@ body{
 }
 #body2{
     margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     position: relative;
+    flex-shrink: 1;
     border: 1px red solid;
     height: max-content;
-    display: flex;
+}
+@font-face {
+    font-family: "cursive";
+    src: url(fonts/Allura-Regular.ttf);
+}
+@font-face {
+    font-family: "script";
+    src: url(fonts/PinyonScript-Regular.ttf);
 }
 @font-face {
     font-family: "pixl";
