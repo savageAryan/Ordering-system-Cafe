@@ -73,7 +73,50 @@ body{
     color: #324714;
 }
 #upper-div button.active{
+    border: 2px rgb(113, 80, 27) solid;
     background-color: #c49876;
+}
+#cart{
+    
+    display: none;
+    margin: 20px;
+    position: absolute;
+    width: 400px;
+    border-radius: 30px;
+    background: #b14f37ad;
+    height: 600px;
+    right: 0px;
+    border: 1px red solid;
+    animation: cartpop 0.1s ease-in -0.3s reverse ;
+    
+}
+#cart.active{
+    animation: cartpop 0.2s ease-in;
+    display: block;
+
+}
+@keyframes cartpop {
+    from{
+        height: 30px;
+        opacity: 0;
+    }
+    to{
+        height: 600px;
+        opacity: 1;
+    }
+}
+#itemcard{
+    height: 300px;
+    margin: 10px;
+    width: 250px;
+    border: 1px blue solid;
+}
+#body2{
+    margin: 5px;
+    position: relative;
+    border: 1px red solid;
+    height: max-content;
+    display: flex;
 }
 @font-face {
     font-family: "pixl";
