@@ -82,13 +82,27 @@ body{
     flex-shrink: 1;
     flex: 1 1 0;
     min-width: 0;
-    border: 1px red solid;
 }
 #control button{
     display: block;
-    margin-left: auto;
+    width: 200px;
+    margin-left: 50px;
+    background: #d98c53;
+    color: #b14f37ad;
+    border: none;
+    padding-bottom: 30px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 30px;
     position: relative;
-    right: 0px;
+}
+#control button:hover{
+    transition: 0.15s ease-in;
+    border: 3px solid #d0703c;
+    border-top: none;
+    padding: 0;
+    background: #62261f;
+    font-size: 40px;
 }
 #control h2{
     margin: 0px;
@@ -103,28 +117,36 @@ body{
     flex-direction: column;
     flex: 1 1 0;
     min-width: 0;
+    margin: 5px;
+    padding: 10px;
+    padding-top: 0px;
+    border-radius: 30px;
+    backdrop-filter: blur(20px);
+    border: 1px solid #966844;
+    background: rgba(109, 55, 14, 0.303);
 }
 #items{
     display: flex;
     flex-wrap: wrap;
     margin: 5px;
+    row-gap: 50px;
     flex-shrink: 1;
     flex: 2 1 0;
     min-width: 0;
     justify-content: space-evenly;
-    border: 1px yellow solid;
 }
 #cart{
-    
+    position: sticky;
+    top: 5px;
     display: none;
     flex: 0 0 400px;
     box-sizing: border-box;
     border-radius: 30px;
     background: #b14f37ad;
     align-self: stretch;
-    margin: 10;
-    height: 620px;
-    border: 1px red solid;
+    margin: 10px;
+    align-self: flex-start;
+    height: 730px;
     min-height: 0;
     animation: cartpop 0.1s ease-in;
     
@@ -144,17 +166,20 @@ body{
     }
 }
 #itemcard{
-    height: 300px;
+    height: 380px;
     margin: 10px;
-    flex: 1 1 250px;
-    border: 1px blue solid;
+    flex: 1 1 300px;
+    
+    border-radius: 20px;
+    background: #c34e313c;
+    border: 1px rgb(185, 112, 48) solid;
 }
 #body2{
     margin: 5px;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     align-items: stretch;
-    border: 1px rgb(1, 17, 0) solid;
 }
 @font-face {
     font-family: "cursive";
