@@ -166,6 +166,9 @@ body{
     }
 }
 #itemcard{
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
     height: 380px;
     margin: 10px;
     flex: 1 1 300px;
@@ -173,6 +176,21 @@ body{
     border-radius: 20px;
     background: #c34e313c;
     border: 1px rgb(185, 112, 48) solid;
+}
+#itemcard p{
+    margin: 0;
+}
+#itemcard h2{
+    margin: 0%;
+}
+#itemcard h3{
+    margin: 0px;
+}
+#itemcard img{
+    align-self: center;
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
 }
 #body2{
     margin: 5px;
