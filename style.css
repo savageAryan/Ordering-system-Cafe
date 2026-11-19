@@ -183,8 +183,10 @@ body{
 #itemcard h2{
     margin: 0%;
 }
+
 #addtocart{
-    margin: auto;
+    margin-right: auto;
+    margin-bottom: auto;
     border-radius: 5px;
     max-height: 60px;
     align-self: flex-start;
@@ -220,11 +222,21 @@ body{
     
 }
 #orderitemname{
+    
     margin: 0;
 
 }
 #orderitemquantity{
     margin: 0;
+}
+#itemname{
+    font-family: "pixel";
+    color: wheat;
+}
+#itemdis{
+    font-weight: 800;
+    color: #412318ae;
+    margin-bottom:5px ;
 }
 #itemcard h3{
     margin: 0px;
@@ -233,7 +245,10 @@ body{
     align-self: center;
     width: 200px;
     height: 200px;
-    border: 1px solid red;
+    border-radius: 30px;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 10px 5px rgb(77, 52, 19);
+    margin-bottom: 5px;
 }
 #body2{
     margin: 5px;
@@ -253,6 +268,10 @@ body{
 @font-face {
     font-family: "pixl";
     src: url(fonts/Nautilus.otf);
+}
+@font-face {
+    font-family: "pixel";
+    src: url(fonts/LowresPixel-Regular.otf);
 }
 @font-face {
     font-family: "bold";
