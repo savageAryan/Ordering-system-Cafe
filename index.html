@@ -29,17 +29,17 @@
         <div id="items">
           <div id="itemcard" data-Item="cookies">
             <img src="" alt="" />
-            <h2>Name</h2>
-            <p>
+            <h2 id="itemname">Name</h2>
+            <p id="itemdis">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
               rem quam eum tempora, beatae dolorem error voluptatum aliquam
               veritatis nam nulla? Repellat, assumenda quisquam excepturi labore
               non ullam optio cumque?
             </p>
-            <button>ADD TO CART</button>
-            <button>-</button>
-            <h3>Quantity</h3>
-            <button>+</button>
+            <button id="addtocart">ADD TO CART</button>
+            <button id="removebutton">-</button>
+            <h3>Quantity : <input type="number" quantity /></h3>
+            <button id="addbutton">+</button>
           </div>
           <div id="itemcard" data-Item="cookies">
             <img src="" alt="" />
@@ -66,12 +66,30 @@
             </p>
             <button>ADD TO CART</button>
             <button>-</button>
-            <h3>Quantity</h3>
+            <h3>Quantity : <input id="quantity" type="number" /></h3>
             <button>+</button>
           </div>
         </div>
       </div>
-      <div id="cart"></div>
+      <div id="cart">
+        <div id="orderlist">
+          <div id="order">
+            <h3>ORDER #1</h3>
+            <div id="orderitem">
+              <h3 id="orderitemname">name</h3>
+              <h3 id="orderquntity">999+</h3>
+            </div>
+            <div id="orderitem">
+              <h3 id="orderitemname">name</h3>
+              <h3 id="orderquntity">999+</h3>
+            </div>
+            <div id="orderitem">
+              <h3 id="orderitemname">name</h3>
+              <h3 id="orderquntity">999+</h3>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="index.js"></script>

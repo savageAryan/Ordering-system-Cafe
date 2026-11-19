@@ -183,6 +183,44 @@ body{
 #itemcard h2{
     margin: 0%;
 }
+#addtocart{
+    border-radius: 5px;
+    height: 80px;
+}
+#addbutton{
+    border-radius: 5px;
+    height: 100px;
+}
+#removebutton{
+    border-radius: 5px;
+    height: 100px;
+}
+#orderlist{
+    margin: 5px;
+    height: 100%;
+    border: 4px solid rgba(241, 173, 128, 0.719);
+    border-radius: 20px;
+}
+#order{
+    margin: 5px;
+    border-radius: 20px;
+    height: max-content;
+    border: 1px solid #966844;
+}
+#order h3{
+    margin: 30px;
+}
+#orderitem{
+    display: flex;
+    
+}
+#orderitemname{
+    margin: 0;
+
+}
+#orderitemquantity{
+    margin: 0;
+}
 #itemcard h3{
     margin: 0px;
 }
