@@ -169,7 +169,7 @@ body{
     display: flex;
     padding: 20px;
     flex-direction: column;
-    height: 380px;
+    min-height: 380px;
     margin: 10px;
     flex: 1 1 300px;
     
@@ -184,16 +184,21 @@ body{
     margin: 0%;
 }
 #addtocart{
+    margin: auto;
     border-radius: 5px;
-    height: 80px;
+    max-height: 60px;
+    align-self: flex-start;
 }
 #addbutton{
+    max-height: 50px;
     border-radius: 5px;
-    height: 100px;
 }
 #removebutton{
+    max-height: 50px;
     border-radius: 5px;
-    height: 100px;
+}
+#itemcrd h3{
+    margin: 10px;
 }
 #orderlist{
     margin: 5px;
