@@ -94,3 +94,34 @@ catobutton.forEach(button =>{
         activebutton.classList.add("active")
     })
 })
+var orderno = 0
+const template = document.getElementById("template")
+itemcard.forEach(card=>{
+    const addbutton = card.querySelector("#addbutton")
+    const removebutton = card.querySelector("#removebutton")
+    const quantity = card.querySelector("#itemcard input")
+    const addtocart = card.querySelector("#addtocart")
+    console.log(addbutton , removebutton , quantity)
+    addbutton.addEventListener("click",()=>{
+        quantity.value = Number(quantity.value) +1
+        console.log(quantity.value)
+    })
+    removebutton.addEventListener("click",()=>{
+        quantity.value = Number(quantity.value) -1
+    })
+    addtocart.addEventListener("click",()=>{
+        orderno = orderno +1
+        const itemid = card.dataset.item
+        const item = menu[itemid]
+        const orderlist = document.getElementById("orderlist")
+        const orderquantity = card.querySelector("#itemcard input")
+        const clone = template.content.cloneNode(true)
+        clone.querySelector("#orderquantity").textContent = Number(orderquantity.value)
+        clone.querySelector("#orderitemname").textContent = item.name
+        clone.querySelector("#order h3").textContent = "ORDER #",orderno
+        orderlist.appendChild(clone)
+        quantity.value = Number(0)
+
+        
+    })
+})

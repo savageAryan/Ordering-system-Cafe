@@ -168,6 +168,9 @@ body{
         opacity: 1;
     }
 }
+#orderlist{
+    overflow-y: auto;
+}
 #itemcard{
     display: flex;
     padding: 20px;
@@ -175,10 +178,11 @@ body{
     min-height: 380px;
     margin: 10px;
     flex: 1 1 300px;
-    
+    outline: 2px solid #9f5103d6 ;
+    outline-offset: -15px;
     border-radius: 20px;
     background: #c34e313c;
-    border: 1px rgb(185, 112, 48) solid;
+    border: 1px solid rgb(199, 121, 52);
 }
 #itemcard.vanish{
     display: none;
@@ -189,7 +193,13 @@ body{
 #itemcard h2{
     margin: 0%;
 }
-
+#itemcard h3{
+    font-family: "pixel";
+    font-weight: 700;
+    color: #384921;
+    font-size: 25px;
+    margin: auto;
+}
 #addtocart{
     margin-right: auto;
     margin-bottom: auto;
@@ -198,10 +208,12 @@ body{
     align-self: flex-start;
 }
 #addbutton{
+    margin: 10px;
     max-height: 50px;
     border-radius: 5px;
 }
 #removebutton{
+    margin: 10px;
     max-height: 50px;
     border-radius: 5px;
 }
@@ -256,6 +268,7 @@ body{
     box-shadow: 10px 5px rgb(77, 52, 19);
     margin-bottom: 5px;
 }
+
 #body2{
     margin: 5px;
     display: flex;

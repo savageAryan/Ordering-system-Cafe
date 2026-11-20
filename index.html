@@ -30,6 +30,7 @@
           <div id="itemcard" data-item="sandwich">
             <img src="images/sandwich.PNG" alt="" />
             <h2 id="itemname">Name</h2>
+            <h3>244PX</h3>
             <p id="itemdis">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
               rem quam eum tempora, beatae dolorem error voluptatum aliquam
@@ -38,12 +39,13 @@
             </p>
             <button id="addtocart">ADD TO CART</button>
             <button id="removebutton">-</button>
-            <h3>Quantity : <input type="number" quantity /></h3>
+            <h3>Quantity : <input type="number" form="1" /></h3>
             <button id="addbutton">+</button>
           </div>
           <div id="itemcard" data-item="coffee">
             <img src="images/coffee.png" alt="" />
             <h2 id="itemname">Name</h2>
+            <h3>244PX</h3>
             <p id="itemdis">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
               rem quam eum tempora, beatae dolorem error voluptatum aliquam
@@ -52,12 +54,13 @@
             </p>
             <button id="addtocart">ADD TO CART</button>
             <button id="removebutton">-</button>
-            <h3>Quantity : <input type="number" quantity /></h3>
+            <h3>Quantity : <input type="number" min="1" /></h3>
             <button id="addbutton">+</button>
           </div>
           <div id="itemcard" data-item="choco">
             <img src="images/choco.png" alt="" />
             <h2 id="itemname">Name</h2>
+            <h3>244PX</h3>
             <p id="itemdis">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
               rem quam eum tempora, beatae dolorem error voluptatum aliquam
@@ -66,12 +69,13 @@
             </p>
             <button id="addtocart">ADD TO CART</button>
             <button id="removebutton">-</button>
-            <h3>Quantity : <input type="number" quantity /></h3>
+            <h3>Quantity : <input type="number" min="1" /></h3>
             <button id="addbutton">+</button>
           </div>
           <div id="itemcard" data-item="gum">
             <img src="images/gum.PNG" alt="" />
             <h2 id="itemname">Name</h2>
+            <h3>244PX</h3>
             <p id="itemdis">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
               rem quam eum tempora, beatae dolorem error voluptatum aliquam
@@ -80,12 +84,13 @@
             </p>
             <button id="addtocart">ADD TO CART</button>
             <button id="removebutton">-</button>
-            <h3>Quantity : <input type="number" quantity /></h3>
+            <h3>Quantity : <input type="number" min="1" /></h3>
             <button id="addbutton">+</button>
           </div>
           <div id="itemcard" data-item="pastry">
             <img src="images/pastry.png" alt="" />
             <h2 id="itemname">Name</h2>
+            <h3>244PX</h3>
             <p id="itemdis">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
               rem quam eum tempora, beatae dolorem error voluptatum aliquam
@@ -94,12 +99,13 @@
             </p>
             <button id="addtocart">ADD TO CART</button>
             <button id="removebutton">-</button>
-            <h3>Quantity : <input type="number" quantity /></h3>
+            <h3>Quantity : <input type="number" min="1" /></h3>
             <button id="addbutton">+</button>
           </div>
           <div id="itemcard" data-item="cookies">
             <img src="images/cookies.png" alt="" />
             <h2 id="itemname">Name</h2>
+            <h3>244PX</h3>
             <p id="itemdis">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
               rem quam eum tempora, beatae dolorem error voluptatum aliquam
@@ -108,28 +114,22 @@
             </p>
             <button id="addtocart">ADD TO CART</button>
             <button id="removebutton">-</button>
-            <h3>Quantity : <input type="number" quantity /></h3>
+            <h3>Quantity : <input type="number" min="1" /></h3>
             <button id="addbutton">+</button>
           </div>
         </div>
       </div>
       <div id="cart">
         <div id="orderlist">
-          <div id="order">
-            <h3>ORDER #1</h3>
-            <div id="orderitem">
-              <h3 id="orderitemname">name</h3>
-              <h3 id="orderquntity">999+</h3>
+          <template id="template">
+            <div id="order">
+              <h3>ORDER #1</h3>
+              <div id="orderitem">
+                <h3 id="orderitemname">name</h3>
+                <h3 id="orderquantity">999+</h3>
+              </div>
             </div>
-            <div id="orderitem">
-              <h3 id="orderitemname">name</h3>
-              <h3 id="orderquntity">999+</h3>
-            </div>
-            <div id="orderitem">
-              <h3 id="orderitemname">name</h3>
-              <h3 id="orderquntity">999+</h3>
-            </div>
-          </div>
+          </template>
         </div>
       </div>
     </div>
