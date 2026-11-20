@@ -64,9 +64,10 @@ itemcard.forEach(item =>{
     const itemname = item.querySelector("#itemname")
     const itemdis = item.querySelector("#itemdis")
     const itemimg = item.querySelector("#itemcard img")
-    
+    const price = item.querySelector("#price")
     itemname.textContent = items.name
     itemdis.textContent = items.discription
+    price.textContent = items.Price
     console.log(item)
 })
 var activebutton = null
@@ -111,6 +112,7 @@ itemcard.forEach(card=>{
     })
     addtocart.addEventListener("click",()=>{
         orderno = orderno +1
+        console.log(orderno,"orders")
         const itemid = card.dataset.item
         const item = menu[itemid]
         const orderlist = document.getElementById("orderlist")
@@ -118,7 +120,7 @@ itemcard.forEach(card=>{
         const clone = template.content.cloneNode(true)
         clone.querySelector("#orderquantity").textContent = Number(orderquantity.value)
         clone.querySelector("#orderitemname").textContent = item.name
-        clone.querySelector("#order h3").textContent = "ORDER #",orderno
+        clone.querySelector("#order h3").textContent = "ORDER #",String(orderno)
         orderlist.appendChild(clone)
         quantity.value = Number(0)
 
