@@ -104,6 +104,9 @@ body{
     background: #62261f;
     font-size: 40px;
 }
+#control button.active{
+    background: #324714;
+}
 #control h2{
     margin: 0px;
     font-family: "cursive";
@@ -176,6 +179,9 @@ body{
     border-radius: 20px;
     background: #c34e313c;
     border: 1px rgb(185, 112, 48) solid;
+}
+#itemcard.vanish{
+    display: none;
 }
 #itemcard p{
     margin: 0;
